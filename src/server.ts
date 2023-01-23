@@ -5,14 +5,7 @@ const app = fastify();
 const prisma = new PrismaClient();
 
 app.get("/consult/habit", async () => {
-  const habit = prisma.habit.findMany({
-    where: {
-      title: {
-        startsWith: "Beber",
-      },
-    },
-  });
-  console.log(habit);
+  const habit = await prisma.habit.findMany();
   return habit;
 });
 app.listen({ port: 3000 }, () => {
