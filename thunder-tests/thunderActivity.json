@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "4e93058b-b056-4c38-b213-26dea3869d88",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit",
+    "url": "http://localhost:3000/consult/habit",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T00:41:53.384Z",
+    "modified": "2023-01-23T00:41:53.384Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
