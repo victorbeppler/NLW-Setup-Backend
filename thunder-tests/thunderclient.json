@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "_id": "dffa334c-4fbd-4a5a-9a83-5d8034d2ba12",
+    "colId": "74057a8c-2e53-4f57-8a8b-4a0528e43453",
+    "containerId": "",
+    "name": "Create Habit",
+    "url": "http://localhost:3000/create/habit",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-01-23T23:23:09.338Z",
+    "modified": "2023-01-23T23:28:28.232Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Queimar 1000 calorias por dia\",\n  \"weekDays\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

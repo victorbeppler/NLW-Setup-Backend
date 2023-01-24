@@ -1,18 +1,13 @@
-import { PrismaClient } from "@prisma/client";
 import fastify from "fastify";
 import cors from "@fastify/cors";
+import { appRoutes } from "./router/routes";
 
 const app = fastify();
-const prisma = new PrismaClient();
 
-app.register(cors,{
+app.register(cors, {
   origin: "*",
 });
-
-app.get("/consult/habit", async () => {
-  const habit = await prisma.habit.findMany();
-  return habit;
-});
+app.register(appRoutes);
 
 app.listen({ port: 3000 }, () => {
   console.log("Server is running on port 3000");

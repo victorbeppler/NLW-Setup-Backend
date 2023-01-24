@@ -4,13 +4,138 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3000/consult/habit",
-    "url": "http://localhost:3000/consult/habit",
-    "method": "GET",
+    "url": "http://localhost:3000/create/habit",
+    "method": "POST",
     "sortNum": 0,
     "created": "2023-01-23T00:41:53.384Z",
-    "modified": "2023-01-23T00:41:53.384Z",
+    "modified": "2023-01-23T23:26:15.515Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Criar um commit por dia\",\n  \"weekDays\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0042e58d-6f6e-42d2-a293-10531d343d29",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-23T00:00:00.000Z",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-23T00:00:00.000Z",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:33:49.181Z",
+    "modified": "2023-01-23T23:33:49.181Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-23T00:00:00.000Z",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "13d14e9d-30c4-4cc8-9a33-a8d78fe791e7",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-23",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-23",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:34:53.431Z",
+    "modified": "2023-01-23T23:34:53.431Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-23",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "c900a3a4-6887-4d43-94e2-651052a2432f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-23T03:00:00.000Z",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-23T03:00:00.000Z",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:35:09.834Z",
+    "modified": "2023-01-23T23:35:09.834Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-23T03:00:00.000Z",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "ad694476-c20d-486d-bf1b-57fad0ed2699",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-02T03:00:00.000Z",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-02T03:00:00.000Z",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:37:07.400Z",
+    "modified": "2023-01-23T23:37:07.400Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-02T03:00:00.000Z",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "4d4552f5-6e31-478a-ade2-73244863f3f3",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-03T03:00:00.000Z",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-03T03:00:00.000Z",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:43:58.256Z",
+    "modified": "2023-01-23T23:43:58.256Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-03T03:00:00.000Z",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "3d77cf1b-97c7-489b-9e10-7bac375ccf7b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/consult/habit/day?date=2023-01-04T03:00:00.000Z",
+    "url": "http://localhost:3000/consult/habit/day?date=2023-01-04T03:00:00.000Z",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-23T23:45:11.870Z",
+    "modified": "2023-01-23T23:45:11.870Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "date",
+        "value": "2023-01-04T03:00:00.000Z",
+        "isPath": false
+      }
+    ],
     "tests": []
   }
 ]
