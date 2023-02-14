@@ -4,24 +4,22 @@ FROM node:16-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# generated prisma files
+COPY prisma ./prisma/
 
-# Copy remaining project files
+# COPY ENV variable
+COPY .env ./
+
+# COPY tsconfig.json file
+COPY tsconfig.json ./
+
+# COPY
 COPY . .
 
-# Set environment variables
-ENV NODE_ENV=production
-ENV DATABASE_URL=file:./dev.db
+RUN npm install
 
-# Install SQLite dependencies
-RUN apk add --no-cache sqlite
+RUN npx prisma generate
 
-# Create the SQLite database
-RUN sqlite3 dev.db ""
-
-# Run the server
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
