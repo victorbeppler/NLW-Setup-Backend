@@ -2,12 +2,12 @@ version: '2.2'
 
 services:
   api:
-    image: back-twitter-app
+    image: back-habit-app
     build: .
     ports:
-      - "3015:3015"
+      - "4001:4001"
     restart: on-failure
-    container_name: back-twitter-app
+    container_name: back-habit-app
     command: npm run start
     volumes:
       - .:/app
