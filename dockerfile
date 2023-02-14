@@ -10,5 +10,8 @@ RUN npm i --save-dev prisma@latest
 RUN npm i @prisma/client@latest
 
 COPY . .
+COPY prisma ./prisma/
+COPY --chown=node:node --from=builder /app/prisma /app/prisma
+COPY --chown=node:node --from=builder /app/src /app/src
 
 CMD ["npm","run", "start"]
