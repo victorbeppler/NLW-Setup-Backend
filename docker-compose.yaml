@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  api:
+    image: back-twitter-app
+    build: .
+    ports:
+      - "3015:3015"
+    restart: on-failure
+    container_name: back-twitter-app
+    command: npm run start
+    volumes:
+      - .:/app
+      - /app/node_modules
