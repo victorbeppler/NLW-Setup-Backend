@@ -9,6 +9,6 @@ app.register(cors, {
 });
 app.register(appRoutes);
 
-app.listen({ port: 4000 }, () => {
-  console.log("Server is running on port 4000");
+app.listen({ port: 4005 }, () => {
+  console.log("Server is running on port 4005");
 });
