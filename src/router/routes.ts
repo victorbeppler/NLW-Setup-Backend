@@ -4,6 +4,12 @@ import { z } from "zod";
 import { prisma } from "../utilities/prisma";
 
 export async function appRoutes(app: FastifyInstance) {
+  app.get("/status", async () => {
+    return {
+      status: "ok",
+    };
+  });
+
   app.post("/habits", async (request) => {
     const createHabitBody = z.object({
       title: z.string(),

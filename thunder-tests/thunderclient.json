@@ -23,11 +23,11 @@
     "colId": "74057a8c-2e53-4f57-8a8b-4a0528e43453",
     "containerId": "",
     "name": "Consult Habit By Day",
-    "url": "http://localhost:3000/day?date=2023-02-12T03:00:00.000Z",
+    "url": "http://192.168.1.106':4005/day?date=2023-02-12T03:00:00.000Z",
     "method": "GET",
     "sortNum": 20000,
     "created": "2023-01-24T23:45:31.823Z",
-    "modified": "2023-02-14T03:19:25.165Z",
+    "modified": "2023-02-15T23:23:57.626Z",
     "headers": [],
     "params": [
       {
@@ -57,11 +57,11 @@
     "colId": "74057a8c-2e53-4f57-8a8b-4a0528e43453",
     "containerId": "",
     "name": "Summary",
-    "url": "http://localhost:3000/summary",
+    "url": "http://190.123.193.62:4005/summary",
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-01-25T01:49:56.419Z",
-    "modified": "2023-01-25T01:50:09.623Z",
+    "modified": "2023-02-15T23:21:09.801Z",
     "headers": [],
     "params": [],
     "tests": []
