@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import express from "@types/express";
+import express from "express";
 import { z } from "zod";
 import { prisma } from "../utilities/prisma";
 

@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import habit from "./router/routes";
+import habit from "./router/habit";
 import status from "./router/status";
 const app = express();
 
@@ -17,9 +17,4 @@ app.listen(4005, () => {
   console.log("Server is running on port 3005");
   app.use("/", status);
   app.use("/api", habit);
-  // app.use("/habitsTeste", () => {
-  //   return {
-  //     status: "ok",
-  //   };
-  // });
 });
