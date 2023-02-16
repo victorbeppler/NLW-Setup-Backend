@@ -2,13 +2,14 @@ version: '2.2'
 
 services:
   api:
-    image: back-habit-app
+    image: habit-back
     build: .
     ports:
       - "4005:4005"
     restart: on-failure
-    container_name: back-habit-app
-    command: npm run start
+    container_name: habit-back
     volumes:
       - .:/app
       - /app/node_modules
+      - .env
+      - 
