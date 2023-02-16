@@ -5,7 +5,7 @@ import { prisma } from "../utilities/prisma";
 
 const router = express.Router();
 
-router.post("habits", async (req, res) => {
+router.post("/habits", async (req, res) => {
   const createHabitBody = z.object({
     title: z.string(),
     weekDays: z.array(z.number().min(0).max(6)),

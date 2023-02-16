@@ -199,11 +199,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://190.123.193.62:4005/api/status",
-    "url": "http://190.123.193.62:4005/api/status",
+    "url": "http://190.123.193.62:4005/status",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-16T01:57:22.761Z",
-    "modified": "2023-02-16T01:57:22.761Z",
+    "modified": "2023-02-16T02:53:34.856Z",
     "headers": [],
     "params": [],
     "tests": []
