@@ -28,6 +28,7 @@ router.post("/habits", async (req, res) => {
       },
     },
   });
+  return res.status(200).send("OK");
 });
 
 router.get("/day", async (req, res) => {
@@ -74,6 +75,7 @@ router.get("/day", async (req, res) => {
 });
 
 router.patch("/habits/:id/toggle", async (req, res) => {
+  console.log(req.params);
   const toggleHabitParams = z.object({
     id: z.string().uuid(),
   });
@@ -119,6 +121,7 @@ router.patch("/habits/:id/toggle", async (req, res) => {
       },
     });
   }
+  return res.status(200).send("OK");
 });
 
 router.get("/summary", async (req, res) => {
