@@ -1,14 +1,25 @@
-import fastify from "fastify";
-import cors from "@fastify/cors";
-import { appRoutes } from "./router/routes";
+import express from "express";
+import cors from "cors";
+import habit from "./router/routes";
+import status from "./router/status";
+const app = express();
 
-const app = fastify();
+app.use(cors());
 
-app.register(cors, {
-  origin: "*",
-});
-app.register(appRoutes);
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+app.use(express.json());
 
-app.listen({ port: 4005 }, () => {
-  console.log("Server is running on port 4005");
+app.listen(4005, () => {
+  console.log("Server is running on port 3005");
+  app.use("/", status);
+  app.use("/api", habit);
+  // app.use("/habitsTeste", () => {
+  //   return {
+  //     status: "ok",
+  //   };
+  // });
 });
