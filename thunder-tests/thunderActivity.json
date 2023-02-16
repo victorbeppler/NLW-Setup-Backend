@@ -193,5 +193,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "989b43dc-8384-4bec-a7bd-dd3ac196a009",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://190.123.193.62:4005/api/status",
+    "url": "http://190.123.193.62:4005/api/status",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-16T01:57:22.761Z",
+    "modified": "2023-02-16T01:57:22.761Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import express from "express";
+import express from "@types/express";
 import { z } from "zod";
 import { prisma } from "../utilities/prisma";
 
@@ -121,7 +121,7 @@ router.patch("/habits/:id/toggle", async (req, res) => {
   }
 });
 
-router.get("/summary", async () => {
+router.get("/summary", async (req, res) => {
   const summary = await prisma.$queryRaw`
       SELECT 
         D.id, 
@@ -145,7 +145,7 @@ router.get("/summary", async () => {
       FROM days D
     `;
 
-  return summary;
+  res.status(200).json(summary);
 });
 
 export default router;
