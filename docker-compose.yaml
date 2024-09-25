@@ -5,7 +5,7 @@ services:
     image: habit-back
     build: .
     ports:
-      - "4005:4005"
+      - "3015:3015"
     restart: on-failure
     container_name: habit-back
     volumes:
