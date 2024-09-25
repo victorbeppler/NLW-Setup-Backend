@@ -1,15 +1,16 @@
 generator client {
   provider = "prisma-client-js"
 }
+
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 model Habit {
   id         String   @id @default(uuid())
   title      String
-  created_at DateTime
+  created_at DateTime @default(now())
 
   dayHabits DayHabit[]
   weekDays  HabitWeekDays[]
@@ -30,7 +31,7 @@ model HabitWeekDays {
 
 model Day {
   id   String   @id @default(uuid())
-  date DateTime
+  date DateTime @default(now())
 
   dayHabits DayHabit[]
 
