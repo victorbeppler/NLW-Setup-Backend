@@ -13,7 +13,7 @@ app.use(
 );
 app.use(express.json());
 
-app.listen(4005, () => {
+app.listen(3015, () => {
   console.log("Server is running on port 3005");
   app.use("/", status);
   app.use("/api", habit);
